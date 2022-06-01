@@ -1,14 +1,17 @@
 :root {
+  /* main fonts */
+  /* font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif; */
+
+  /* main color */
   --primary-text-color: #555555;
   --primary-white-color: #ffffff;
   --primary-title-color: #303030;
   --secondary-text-color: #9da4bd;
   --accent-color: #ff6c00;
-}
 
-/* fonts style
-font-family: 'Open Sans', sans-serif;
-font-family: 'Raleway', sans-serif; */
+  /* main background */
+}
 
 body {
   background-color: #ffffff;
@@ -17,11 +20,11 @@ body {
   color: var(--primary-text-color);
 }
 
-/* header */
-ul {
+.list {
   list-style: none;
 }
-.nav-list a {
+/* header */
+.nav-link {
   text-decoration: none;
   color: var(--primary-white-color);
   font-weight: 600;
@@ -32,15 +35,12 @@ ul {
   background-color: #303030;
 }
 
-.nav-list :hover {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--accent-color);
 }
 
-.nav-list a:focus {
-  color: var(--accent-color);
-}
-
-.nav-tel {
+.header-phone {
   color: var(--primary-white-color);
   font-weight: 600;
   font-size: 12px;
@@ -49,28 +49,26 @@ ul {
   text-transform: uppercase;
   background-color: #303030;
 }
-.nav-tel:hover {
+.header-phone:hover,
+.header-phone:focus {
   color: var(--accent-color);
 }
-.nav-tel:focus {
-  color: var(--accent-color);
-}
-.nav-bt {
+
+.header-button {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  background-color: transparent;
 }
-.nav-bt:hover {
-  color: var(--accent-color);
-}
-.nav-bt:focus {
+.header-button:hover,
+.header-button:focus {
   color: var(--accent-color);
 }
 
 /* section hero */
-.hero-list a{
+.hero-list a {
   text-decoration: none;
   font-weight: 600;
   font-size: 11px;
@@ -128,7 +126,7 @@ ul {
   letter-spacing: 0.05em;
 }
 
-.about-sl {
+.about-subtitle {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.17;
@@ -292,46 +290,46 @@ address p {
   color: var(--secondary-text-color);
 }
 .adr-tel a {
-    font-weight: 400;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
   color: var(--secondary-text-color);
-text-decoration: none;
+  text-decoration: none;
 }
 
 .adr-email a {
-    font-weight: 400;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
   color: var(--secondary-text-color);
 }
 
 .cont h4 {
-font-weight: 600;
-font-size: 11px;
-line-height: 1.36;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-color: #FFFFFF;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 .const-text {
-font-weight: 400;
-font-size: 18px;
-line-height: 1.67;
-color: var(--secondary-text-color)
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  color: var(--secondary-text-color);
 }
 
 /* footer */
 footer p {
-font-weight: 600;
-font-size: 11px;
-line-height: 1.36;
-color: var(--secondary-text-color)
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: var(--secondary-text-color);
 }
 footer ul li a {
-    font-weight: 600;
-font-size: 11px;
-line-height: 1.36;
-color: var(--primary-title-color);
-text-decoration: none;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: var(--primary-title-color);
+  text-decoration: none;
 }
