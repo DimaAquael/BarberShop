@@ -13,7 +13,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-cont">
         <a href="./index.html" class="header-link"><img src="/icon/Logo.svg" alt="Logo" width="68" height="55" class="header-logo" /></a>
         <nav class="nav">
           <ul class="nav-list list">
@@ -29,16 +29,16 @@
     </header>
     <main>
       <!-- Секция Герой -->
-      <section class="hero">
+      <section class="hero section">
         <div class="container">
           <ul class="hero-list list">
             <li class="hero-item"><a href="/" class="hero-link">Instagram</a></li>
             <li class="hero-item"><a href="/" class="hero-link">YouTube</a></li>
           </ul>
-          <p class="hero-text" lang="en">A hair salon for men in Kyiv</p>
+          <p class="hero-uppertitle" lang="en">A hair salon for men in Kyiv</p>
           <h1 class="hero-title">BarberShop</h1>
 
-          <p class="hero-desc" lang="en">We are experts in trendy men's haircuts. We work quickly, carefully, and tastefully.</p>
+          <p class="hero-subtitle" lang="en">We are experts in trendy men's haircuts. We work quickly, carefully, and tastefully.</p>
           <ul class="hero-list-bt list">
             <li><button type="button">Назад</button></li>
             <li><button type="button">Вперед</button></li>
@@ -46,32 +46,36 @@
         </div>
       </section>
       <!-- Секция О нас -->
-      <section class="about">
-        <div class="container">
-          <ul class="list">
-            <li>
+      <section class="about section">
+        <div class="container about-cont">
+          <ul class="about-list list">
+            <li class="about-item">
               <img src="./img/img-1.jpg" alt="Стрижка бороды" width="270" />
             </li>
-            <li><img src="./img/img-2.jpg" alt="Стрижка волос" width="270" /></li>
+            <li class="about-item">
+              <img src="./img/img-2.jpg" alt="Стрижка волос" width="270" />
+            </li>
           </ul>
-          <p class="about-text">О НАС</p>
-          <h2 class="about-title">Лучший Барбершоп твоего города</h2>
-          <h3 class="about-subtitle">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</h3>
-          <p class="about-desc">
-            Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже никогда
-            не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто
-            к нам приходит!
-          </p>
-          <button type="button" class="about-btn">Онлайн-запись</button>
+          <div class="about-wrapper">
+            <p class="about-text">О НАС</p>
+            <h2 class="about-title">Лучший Барбершоп твоего города</h2>
+            <h3 class="about-subtitle">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</h3>
+            <p class="about-desc">
+              Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
+              никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать
+              каждого, кто к нам приходит!
+            </p>
+            <button type="button" class="about-btn">Онлайн-запись</button>
+          </div>
         </div>
       </section>
       <!-- Секция Цены -->
-      <section class="price">
+      <section class="price section">
         <div class="container">
           <p class="price-header">Проведи время в компании лучших мастеров</p>
           <h2 class="price-title">Услуги и цены</h2>
           <ul class="price-list list">
-            <li>
+            <li class="price-item">
               <ul class="price-inner-list list">
                 <li class="price-inner-item">Мужская стрижка <span class="price-inner-text">от 300 sгрн.</span></li>
                 <li class="price-inner-item">Стрижка бороды <span class="price-inner-text">от 200 грн.</span></li>
@@ -79,7 +83,7 @@
                 <li class="price-inner-item">Бритье опасной бритвой <span class="price-inner-text">от 200 грн.</span></li>
               </ul>
             </li>
-            <li>
+            <li class="price-item">
               <ul class="price-inner-list list">
                 <li class="price-inner-item">Стрижка у стажера<span class="price-inner-text">от 50 грн.</span></li>
                 <li class="price-inner-item">Стрижка под насадку<span class="price-inner-text">от 200 грн.</span></li>
@@ -93,37 +97,39 @@
         </div>
       </section>
       <!-- Секция преимущества -->
-      <section class="plus">
-        <div class="container">
+      <section class="plus section">
+        <div class="container plus-cont">
           <ul class="plus-list list">
-            <li>
+            <li class="plus-item">
               <p class="plus-list-number">600</p>
-              <img src="./icon/plus.svg" alt="Преимущества" width="13" height="22" />
+              <!-- <img src="./icon/plus.svg" alt="Преимущества" width="13" height="22" /> -->
               <p class="plus-list-text">Довольных клиентов в день</p>
             </li>
-            <li>
+            <li class="plus-item">
               <p class="plus-list-number">50</p>
-              <img src="./icon/plus.svg" alt="Преимущества" width="13" height="22" />
+              <!-- <img src="./icon/plus.svg" alt="Преимущества" width="13" height="22" /> -->
               <p class="plus-list-text">Наград за отличный сервис</p>
             </li>
-            <li>
+            <li class="plus-item">
               <p class="plus-list-number">20</p>
-              <img src="/icon/plus.svg" alt="Преимущества" width="13" height="22" />
+              <!-- <img src="/icon/plus.svg" alt="Преимущества" width="13" height="22" /> -->
               <p class="plus-list-text">Лучших мастеров Киева</p>
             </li>
-            <li>
+            <li class="plus-item">
               <p class="plus-list-number">100</p>
-              <img src="./icon/plus.svg" alt="Преимущества" width="13" height="22" />
+              <!-- <img src="./icon/plus.svg" alt="Преимущества" width="13" height="22" /> -->
               <p class="plus-list-text">Подарков постоянным клиентам</p>
             </li>
           </ul>
-          <p class="plus-header">старая традиционная школа</p>
-          <h2 class="plus-title">Почему приходят именно к нам?</h2>
+          <div class="plus-wrapper-text">
+            <p class="plus-header">старая традиционная школа</p>
+           <h2 class="plus-title">Почему приходят именно к нам?</h2>
           <p class="plus-text">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</p>
+          </div>
         </div>
       </section>
       <!-- Секция Мастера -->
-      <section class="master">
+      <section class="master section">
         <div class="container">
           <p class="master-header">для настоящих ценителей атмосферы</p>
           <h2 class="master-title">Наши мастера</h2>
@@ -132,16 +138,16 @@
               <img class="master-img" src="./img/master-1.jpg" alt="Мастер 1" width="370" />
               <h3 class="master-subtitle">John Smith</h3>
               <p lang="en" class="master-text">Extreme Barber</p>
-              <ul class="list">
-                <li>
+              <ul class="master-inner-list list">
+                <li class="master-inner-item">
                   <a href="#"><img src="./icon/instagram-2.svg" alt="instagram" /></a>
                 </li>
-                <li>
+                <li class="master-inner-item">
                   <a href="#"><img src="./icon/twitter-1.svg" alt="twitter" /></a>
                 </li>
-                <li>
+                <li class="master-inner-item">
                   <a href="#"><img src="./icon/facebook-1.svg" alt="facebook" /></a>
-                </li>
+                </li class="master-inner-item">
                 <li>
                   <a href="#"><img src="./icon/linkedin-1.svg" alt="linkedin" /></a>
                 </li>
@@ -151,7 +157,7 @@
               <img class="master-img" src="./img/master-2.jpg" alt="Мастер 2" width="370" />
               <h3 class="master-subtitle">Michele Doe</h3>
               <p lang="en" class="master-text">Extreme Barber</p>
-              <ul class="list">
+              <ul class="master-inner-list list">
                 <li>
                   <a href="#"><img src="./icon/instagram-2.svg" alt="instagram" /></a>
                 </li>
@@ -170,7 +176,7 @@
               <img class="master-img" src="./img/master-3.jpg" alt="Мастер 3" width="370" />
               <h3 class="master-subtitle">Alan Black</h3>
               <p lang="en" class="master-text">Extreme Barber</p>
-              <ul class="list">
+              <ul class="master-inner-list list">
                 <li>
                   <a href="#"><img src="./icon/instagram-2.svg" alt="instagram" /></a>
                 </li>
@@ -189,12 +195,12 @@
         </div>
       </section>
       <!-- Секция Наши работы -->
-      <section class="works">
+      <section class="works section">
         <div class="container">
           <!-- h2 скрытый -->
           <h2 hidden>Галерея работ</h2>
           <p class="works-header">На латинском языке “барба” означает “борода”</p>
-          <ul class="list">
+          <ul class="works-list list">
             <li><img src="./img/Rectangle-25.jpg" alt="Стрижка" /></li>
             <li><img src="./img/Rectangle-26.jpg" alt="Бритье" /></li>
             <li><img src="./img/Rectangle-27.jpg" alt="Процедуры релакса" /></li>
@@ -205,7 +211,7 @@
         </div>
       </section>
       <!-- Секция Контактная информация -->
-      <section class="cont">
+      <section class="cont section">
         <div class="container">
           <!-- H2 скрытый -->
           <h2 hidden>Контактная информация</h2>
@@ -239,12 +245,12 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="container">
+    <footer class="footer">
+      <div class="container footer-cont">
         <p>&copy Copyright 2022</p>
-        <ul class="list">
-          <li><a href="/">Instagram</a></li>
-          <li><a href="/">YouTube</a></li>
+        <ul class="footer-list list">
+          <li class="footer-item"><a href="/">Instagram</a></li>
+          <li class="footer-item"><a href="/">YouTube</a></li>
         </ul>
       </div>
     </footer>
