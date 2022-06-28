@@ -337,6 +337,8 @@ div.right-head{
 	background-color: white;
 	border: 1px solid #d9d9d9;
 	width: 29%;
+	box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+	border-radius: 0px 0px 15px 15px;
 }
 div.right-head div{
 	padding-left: 20px;
@@ -680,9 +682,11 @@ div.picslider div.scrollinner a img{
 }
 td.slider div.picslider div.scrollinner a img{
 	width: 65px;
+
 }
 div.pictures{
-	margin-top: 32px; 
+	cursor: pointer;
+	margin-top: 32px;
 }
 /** NEW CODE ICON ON DETAIL PIC **/
 div.js-element .icon.da2qb, .js-element .icon.da2qb {
