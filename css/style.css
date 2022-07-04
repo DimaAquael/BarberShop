@@ -11,6 +11,8 @@
   --accent-color: #ff6c00;
 
   /* main background */
+  --main-background-color: #111319;
+  --secondary-background-color: #191c26;
 }
 
 html {
@@ -278,6 +280,13 @@ img {
 }
 
 /* section price */
+.price {
+  background-color: var(--main-background-color);
+  background-image: url(../img/bg-price.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
 .price-header {
   font-weight: 600;
   font-size: 11px;
@@ -311,8 +320,15 @@ img {
 
 .price-item {
   padding: 30px 40px;
-  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
   flex-basis: calc(100% / 2);
+}
+
+.price-item-left {
+  background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.price-item-right {
+  background-image: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
 .price-inner-item {
@@ -354,7 +370,7 @@ img {
 .plus-cont {
   display: flex;
   gap: 30px;
-flex-basis: calc(100%/2);
+  flex-basis: calc(100% / 2);
 }
 
 .plus-wrapper-text {
@@ -362,10 +378,10 @@ flex-basis: calc(100%/2);
 
 .plus-list {
   color: var(--primary-title-color);
-  
+
   display: flex;
-  flex-wrap: wrap;  
-  gap:30px;
+  flex-wrap: wrap;
+  gap: 30px;
 
   margin-left: 100px;
 }
@@ -444,6 +460,7 @@ flex-basis: calc(100%/2);
 .master-list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .master-img {
@@ -477,6 +494,40 @@ flex-basis: calc(100%/2);
   justify-content: center;
 }
 
+.master-inner-item {
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+
+  border-radius: 50%;
+  background-color: var(--primary-white-color);
+  color: var(--primary-title-color);
+
+  outline: 1px solid tomato;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.master-inner-item:hover,
+.master-inner-item:focus {
+  color: var(--accent-color);
+}
+
+.master-link-icon {
+  list-style: none;
+  color: currentColor;
+  padding: 0;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.master-icon {
+  fill: currentColor;
+}
+
 /* section Our works */
 .works p,
 .works-header {
@@ -496,6 +547,26 @@ flex-basis: calc(100%/2);
 }
 
 /* section Contacs */
+.cont {
+  background-color: var(--secondary-background-color);
+  background-image: url(../img/contacts-bg.png);
+  background-repeat: no-repeat;
+  background-position: top 50% right calc(50% - 300px);
+}
+
+.cont-container {
+  display: flex;
+}
+
+.cont-wrapper1,
+.cont-wrapper2 {
+  flex-basis: calc(100% / 2);
+}
+
+.cont-wrapper2 {
+  padding-left: 100px;
+}
+
 .cont h3 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -503,7 +574,6 @@ flex-basis: calc(100%/2);
   line-height: 1.17;
   letter-spacing: 0.05em;
   color: var(--primary-white-color);
-  background-color: #303030;
 
   margin-bottom: 40px;
 }
@@ -520,6 +590,7 @@ flex-basis: calc(100%/2);
   padding: 12px 38px;
   border: 1px solid var(--accent-color);
   border-radius: 25px;
+
 }
 
 .cont-btn:hover,
@@ -533,7 +604,16 @@ address p {
   font-size: 18px;
   line-height: 1.67;
   color: var(--secondary-text-color);
+
+  display: inline-flex;
 }
+
+.adr img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 16px;
+}
+
 .adr-tel a {
   font-weight: 400;
   font-size: 18px;
@@ -556,6 +636,9 @@ address p {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #ffffff;
+
+  margin-top: 70px;
+  margin-bottom: 20px;
 }
 .const-text {
   font-weight: 400;
