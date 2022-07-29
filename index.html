@@ -77,18 +77,34 @@
           <ul class="price-list list">
             <li class="price-item price-item-left">
               <ul class="price-inner-list list">
-                <li class="price-inner-item"> <span class="price-inner-name">Мужская стрижка</span> <span class="price-inner-text">от 300 грн.</span></li>
-                <li class="price-inner-item"> <span class="price-inner-name">Стрижка бороды</span> <span class="price-inner-text">от 200 грн.</span></li>
-                <li class="price-inner-item"> <span class="price-inner-name"> Стрижка усов </span><span class="price-inner-text">от 200 грн.</span></li>
-                <li class="price-inner-item"> <span class="price-inner-name"> Бритье опасной бритвой</span> <span class="price-inner-text">от 200 грн.</span></li>
+                <li class="price-inner-item">
+                  <span class="price-inner-name">Мужская стрижка</span> <span class="price-inner-text">от 300 грн.</span>
+                </li>
+                <li class="price-inner-item">
+                  <span class="price-inner-name">Стрижка бороды</span> <span class="price-inner-text">от 200 грн.</span>
+                </li>
+                <li class="price-inner-item">
+                  <span class="price-inner-name"> Стрижка усов </span><span class="price-inner-text">от 200 грн.</span>
+                </li>
+                <li class="price-inner-item">
+                  <span class="price-inner-name"> Бритье опасной бритвой</span> <span class="price-inner-text">от 200 грн.</span>
+                </li>
               </ul>
             </li>
             <li class="price-item price-item-right">
               <ul class="price-inner-list list">
-                <li class="price-inner-item"> <span class="price-inner-name"> Стрижка у стажера</span> <span class="price-inner-text">от 50 грн.</span></li>
-                <li class="price-inner-item"> <span class="price-inner-name"> Стрижка под насадку</span> <span class="price-inner-text">от 200 грн.</span></li>
-                <li class="price-inner-item"> <span class="price-inner-name"> Детская стрижка (до 12 лет) </span> <span class="price-inner-text">от 300 грн.</span></li>
-                <li class="price-inner-item"> <span class="price-inner-name"> Камуфлирование седины</span> <span class="price-inner-text">от 200 грн.</span></li>
+                <li class="price-inner-item">
+                  <span class="price-inner-name"> Стрижка у стажера</span> <span class="price-inner-text">от 50 грн.</span>
+                </li>
+                <li class="price-inner-item">
+                  <span class="price-inner-name"> Стрижка под насадку</span> <span class="price-inner-text">от 200 грн.</span>
+                </li>
+                <li class="price-inner-item">
+                  <span class="price-inner-name"> Детская стрижка (до 12 лет) </span> <span class="price-inner-text">от 300 грн.</span>
+                </li>
+                <li class="price-inner-item">
+                  <span class="price-inner-name"> Камуфлирование седины</span> <span class="price-inner-text">от 200 грн.</span>
+                </li>
               </ul>
             </li>
           </ul>
@@ -101,7 +117,7 @@
           <ul class="plus-list list">
             <li class="plus-item">
               <p class="plus-list-number">600</p>
-                <!-- <svg class="plus-icon" width="13" height="22">
+              <!-- <svg class="plus-icon" width="13" height="22">
                   <use href="./icon/symbol-defs.svg#icon-plus"></use>
                 </svg> -->
               <p class="plus-list-text">Довольных клиентов в день</p>
@@ -272,10 +288,24 @@
             <!-- H2 скрытый -->
             <h2 hidden>Контактная информация</h2>
             <h3>Онлайн-запись</h3>
-            <input type="text" name="Имя" id="" />
-            <input type="text" name="Телефон" id="" />
-            <input type="text" name="Сообщение" id="" />
-            <button type="button" class="cont-btn">Отправить</button>
+
+            <form action="" class="contacts-form">
+              <div class="form-wrapper">
+                <label class="contacts-form-label">
+                  <input type="text" class="contacts-form-input" placeholder=" " required minlength="3" maxlength="12" />
+                  <span class="form-input-label">Имя*</span>
+                </label>
+                <label class="contacts-form-label">
+                  <input type="tel" class="contacts-form-input" placeholder=" " required />
+                  <span class="form-input-label">Телефон*</span>
+                </label>
+              </div>
+              <label class="contacts-form-label">
+                <textarea name="feedback" class="contacts-form-input textarea" rows="5" placeholder=" "></textarea>
+                <span class="form-input-label label-textarea">Сообщение</span>
+              </label>
+              <button type="submit" class="cont-btn">Отправить</button>
+            </form>
           </div>
           <div class="cont-wrapper2">
             <h3>Контакты</h3>

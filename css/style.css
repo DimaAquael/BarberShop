@@ -430,12 +430,12 @@ img {
 }
 
 .plus-list-number::after {
-position: absolute;
-top: 7px;
-/* left: 80%; */
+  position: absolute;
+  top: 7px;
+  /* left: 80%; */
   content: "+";
   width: 13px;
-height: 22px;
+  height: 22px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -614,6 +614,10 @@ height: 22px;
   flex-basis: calc(100% / 2);
 }
 
+.cont-wrapper1 {
+  padding-left: 40px;
+  padding-right: 60px;
+}
 .cont-wrapper2 {
   padding-left: 100px;
 }
@@ -626,9 +630,93 @@ height: 22px;
   letter-spacing: 0.05em;
   color: var(--primary-white-color);
 
-  margin-bottom: 40px;
+  margin-bottom: 44px;
 }
+
+/* Форма */
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 44px;
+}
+
+.contacts-form-label {
+  position: relative;
+flex-basis: calc(100%/2);
+}
+
+.contacts-form-label:first-child {
+margin-right: 30px;
+}
+.contacts-form-input {
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+color: var(--primary-white-color);
+}
+
+.contacts-form-input:focus,
+.contacts-form-input:hover {
+  border-color: var(--primary-white-color);
+}
+
+.contacts-form-input:not(:placeholder-shown) {
+  color: var(--primary-white-color);
+}
+
+.form-input-label {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 500ms ease-in-out;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.contacts-form-input:focus-within + .form-input-label {
+  color: var(--primary-white-color);
+  transform: translateY(-200%);
+}
+
+.contacts-form-input:not(:placeholder-shown) + .form-input-label {
+  color: var(--primary-white-color);
+  transform: translateY(-200%);
+}
+
+
+.textarea {
+  resize:none;
+}
+
+.label-textarea {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(-50%);
+  transition: transform 500ms ease-in-out;
+}
+
+.contacts-form-input:focus-within + .label-textarea {
+  color: var(--primary-white-color);
+  transform: translateY(-750%);
+}
+
+.contacts-form-input:not(:placeholder-shown) + .label-textarea {
+  color: var(--primary-white-color);
+  transform: translateY(-750%);
+}
+
 .cont-btn {
+  display: block;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -639,6 +727,7 @@ height: 22px;
   background-color: transparent;
 
   padding: 12px 38px;
+  margin-top: 44px;
   border: 1px solid var(--accent-color);
   border-radius: 25px;
 }
