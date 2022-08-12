@@ -9,9 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
+    <div class="own-wrapper">
     <header class="header">
       <div class="container header-cont">
         <a href="./index.html" class="header-link"><img src="/icon/Logo.svg" alt="Logo" width="68" height="55" class="header-logo" /></a>
@@ -24,27 +25,31 @@
           </ul>
         </nav>
         <a href="tel:+380441111111" class="header-phone">+38 044 111 11 11</a>
+        <a href="#form"> 
         <button type="button" class="header-button">Онлайн-запись</button>
+        </a>
       </div>
     </header>
     <main>
       <!-- Секция Герой -->
-      <section class="hero section">
-        <div class="container">
+      <section class="hero">
+        <div class="container hero__container">
           <ul class="hero-list list">
             <li class="hero-item"><a href="/" class="hero-link">Instagram</a></li>
             <li class="hero-item"><a href="/" class="hero-link">YouTube</a></li>
           </ul>
+          <div class="hero__wrapper">
           <p class="hero-uppertitle decor-text-light" lang="en">A hair salon for men in Kyiv</p>
           <h1 class="hero-title">BarberShop</h1>
-
           <p class="hero-subtitle" lang="en">We are experts in trendy men's haircuts. We work quickly, carefully, and tastefully.</p>
+        </div>
           <ul class="hero-list-bt list">
-            <li><button type="button">Назад</button></li>
-            <li><button type="button">Вперед</button></li>
+            <li class="hero__item-bt"><button type="button" class="hero__btn hero__btn--left">Назад</button></li>
+            <li class="hero__item-bt"><button type="button" class="hero__btn hero__btn--right">Вперед</button></li>
           </ul>
         </div>
       </section>
+      </div>
       <!-- Секция О нас -->
       <section class="about section">
         <div class="container about-cont">
@@ -65,7 +70,9 @@
               никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать
               каждого, кто к нам приходит!
             </p>
+            <a href="#form">
             <button type="button" class="about-btn">Онлайн-запись</button>
+          </a>
           </div>
         </div>
       </section>
@@ -108,7 +115,9 @@
               </ul>
             </li>
           </ul>
+          <a href="#form">
           <button type="button" class="price-btn">Онлайн-запись</button>
+          </a>
         </div>
       </section>
       <!-- Секция преимущества -->
@@ -289,8 +298,8 @@
             <h2 hidden>Контактная информация</h2>
             <h3>Онлайн-запись</h3>
 
-            <form action="" class="contacts-form">
-              <div class="form-wrapper">
+            <form action="" class="contacts-form" id="form">
+              <div class="form-wrapper ">
                 <label class="contacts-form-label">
                   <input type="text" class="contacts-form-input" placeholder=" " required minlength="3" maxlength="12" />
                   <span class="form-input-label">Имя*</span>

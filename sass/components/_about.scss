@@ -1,0 +1,77 @@
+/* section about us */
+.about-cont {
+  display: flex;
+  align-items: flex-start;
+}
+
+.about-list {
+  display: flex;
+  margin-right: 64px;
+}
+
+.about-item {
+  width: 270px;
+}
+
+.about-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-text {
+  color: var(--primary-title-color);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+
+.about-title {
+  color: var(--primary-title-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+
+  margin-bottom: 20px;
+}
+
+.about-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+
+  margin-bottom: 20px;
+}
+
+.about-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+
+  margin-bottom: 40px;
+}
+
+.about-btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+  background-color: transparent;
+
+  padding: 12px 20px;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+}
+
+.about-btn:hover,
+.about-btn:focus {
+  color: var(--primary-white-color);
+  background-color: #ff6c00;
+  cursor: pointer;
+}

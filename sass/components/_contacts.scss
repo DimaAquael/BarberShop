@@ -1,0 +1,35 @@
+/* section Contacs */
+.cont {
+  background-color: var(--secondary-background-color);
+  background-image: url(../img/contacts-bg.png);
+  background-repeat: no-repeat;
+  background-position: top 50% right calc(50% - 300px);
+}
+
+.cont-container {
+  display: flex;
+}
+
+.cont-wrapper1,
+.cont-wrapper2 {
+  flex-basis: calc(100% / 2);
+}
+
+.cont-wrapper1 {
+  padding-left: 40px;
+  padding-right: 60px;
+}
+.cont-wrapper2 {
+  padding-left: 100px;
+}
+
+.cont h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--primary-white-color);
+
+  margin-bottom: 44px;
+}
