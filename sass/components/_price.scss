@@ -1,9 +1,35 @@
 /* section price */
 .price {
   background-color: var(--main-background-color);
-  background-image: url(../img/bg-price.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  background-image: url(../img/price/bg-price_sm.png);
+  background-image: url(../img/price/bg-price_sm.webp);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../img/price/bg-price_sm@2x.png);
+    background-image: url(../img/price/bg-price_sm@2x.webp);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../img/price/bg-price_md.png);
+    background-image: url(../img/price/bg-price_md.webp);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../img/price/bg-price_md@2x.png);
+      background-image: url(../img/price/bg-price_md@2x.webp);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../img/price/bg-price_lg.png);
+    background-image: url(../img/price/bg-price_lg.webp);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../img/price/bg-price_lg@2x.png);
+      background-image: url(../img/price/bg-price_lg@2x.webp);
+    }
+  }
 }
 
 .price-header {
@@ -25,7 +51,6 @@
   margin-bottom: 44px;
 }
 .price-list {
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
@@ -35,11 +60,24 @@
   align-items: center;
 
   margin-bottom: 50px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+    line-height: 2.14;
+  }
+
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+  }
 }
 
 .price-item {
   padding: 30px 40px;
-  flex-basis: calc(100% / 2);
+  width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 2);
+  }
 }
 
 .price-item-left {
@@ -90,10 +128,13 @@
 
   display: block;
   margin: 0 auto;
+
+  transition: background-color 250ms linear, transform 250ms ease-in-out 250ms;
 }
 .price-btn:hover,
 .price-btn:focus {
   color: var(--primary-white-color);
   background-color: #ff6c00;
+  transform: scaleX(1.1);
   cursor: pointer;
 }
