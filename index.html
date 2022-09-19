@@ -9,51 +9,98 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
+    <div class="own-wrapper">
     <header class="header">
       <div class="container header-cont">
         <a href="./index.html" class="header-link"><img src="/icon/Logo.svg" alt="Logo" width="68" height="55" class="header-logo" /></a>
-        <nav class="nav">
-          <ul class="nav-list list">
-            <li class="nav-item"><a href="/" class="nav-link">О нас</a></li>
-            <li class="nav-item"><a href="/" class="nav-link">Услуги и цены</a></li>
-            <li class="nav-item"><a href="/" class="nav-link">Мастера</a></li>
-            <li class="nav-item"><a href="/" class="nav-link">Контакты</a></li>
-          </ul>
-        </nav>
-        <a href="tel:+380441111111" class="header-phone">+38 044 111 11 11</a>
-        <button type="button" class="header-button">Онлайн-запись</button>
+        
+        <!-- Мобильное меню -->
+        <div class="mobile-overley" data-menu>
+          <div class="mobile-menu">
+            <nav class="mobile-menu__nav">
+              <ul class="mobile-menu__list list">
+                <li class="mobile-menu__item"><a href="" class="mobile-menu__link">О нас</a></li>
+                <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Услуги и цены</a></li>
+                <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Мастера</a></li>
+                <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="mobile-contacs">
+              <a class="mobile-contacs__tel" href="tel:+38 044 111 11 11">+38 044 111 11 11</a>
+              <button type="button" class="mobile-contacs__btn">онлайн-запись</button>
+                <ul class="mobile-link list">
+                  <li class="mobile-link__item"><a class="mobile-link__link" href="http://" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                  <li class="mobile-link__item"><a class="mobile-link__link" href="http://" target="_blank" rel="noopener noreferrer">Youtube</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        <button class="menu-button" data-menu-button aria-expanded="false" aria-label="Переключатель мобильного меню">
+          <svg class="menu-button__icon" width="40" height="40">
+            <use class="menu-button__icon-menu" href="./icon/symbol-defs.svg#icon-menu_40px"></use>
+            <use class="menu-button__icon-close" href="./icon/symbol-defs.svg#icon-close_40px"></use>
+          </svg>
+        </button>
+        <!-- Закончилось мобильное меню -->
+        <div class="menu-container">  
+          <nav class="nav">
+            <ul class="nav-list list">
+              <li class="nav-item"><a href="/" class="nav-link">О нас</a></li>
+              <li class="nav-item"><a href="/" class="nav-link">Услуги и цены</a></li>
+              <li class="nav-item"><a href="/" class="nav-link">Мастера</a></li>
+              <li class="nav-item"><a href="/" class="nav-link">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header-wrapper">  
+            <a href="tel:+380441111111" class="header-phone">+38 044 111 11 11</a>
+            <a href="#form"> 
+            <button type="button" class="header-button">Онлайн-запись</button>
+            </a>
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <!-- Секция Герой -->
-      <section class="hero section">
-        <div class="container">
+      <section class="hero">
+        <div class="container hero__container">
           <ul class="hero-list list">
             <li class="hero-item"><a href="/" class="hero-link">Instagram</a></li>
             <li class="hero-item"><a href="/" class="hero-link">YouTube</a></li>
           </ul>
+          <div class="hero__wrapper">
           <p class="hero-uppertitle decor-text-light" lang="en">A hair salon for men in Kyiv</p>
           <h1 class="hero-title">BarberShop</h1>
-
           <p class="hero-subtitle" lang="en">We are experts in trendy men's haircuts. We work quickly, carefully, and tastefully.</p>
+        </div>
           <ul class="hero-list-bt list">
-            <li><button type="button">Назад</button></li>
-            <li><button type="button">Вперед</button></li>
+            <li class="hero__item-bt"><button type="button" class="hero__btn hero__btn--left">Назад</button></li>
+            <li class="hero__item-bt"><button type="button" class="hero__btn hero__btn--right">Вперед</button></li>
           </ul>
         </div>
       </section>
+      </div>
       <!-- Секция О нас -->
       <section class="about section">
         <div class="container about-cont">
           <ul class="about-list list">
             <li class="about-item">
-              <img src="./img/img-1.jpg" alt="Стрижка бороды" width="270" />
+              <picture>
+                <source srcset="./img/about/pic-1_lg.jpg 1x, ./img/about/pic-1_lg@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)" />
+                <source srcset="./img/about/pic-1_md.jpg 1x, ./img/about/pic-1_md@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" />
+                <img src="./img/about/pic-1_lg.jpg" alt="Стрижка бороды" />
+             </picture>
             </li>
             <li class="about-item">
-              <img src="./img/img-2.jpg" alt="Стрижка волос" width="270" />
+              <picture>
+                <source srcset="./img/about/pic-2_lg.jpg 1x, ./img/about/pic-2_lg@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)" />
+                <source srcset="./img/about/pic-2_md.jpg 1x, ./img/about/pic-2_md@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" />
+                <img src="./img/about/pic-2_lg.jpg" alt="Стрижка волос" />
+             </picture>
             </li>
           </ul>
           <div class="about-wrapper">
@@ -65,7 +112,9 @@
               никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать
               каждого, кто к нам приходит!
             </p>
+            <a href="#form">
             <button type="button" class="about-btn">Онлайн-запись</button>
+          </a>
           </div>
         </div>
       </section>
@@ -108,7 +157,9 @@
               </ul>
             </li>
           </ul>
+          <a href="#form">
           <button type="button" class="price-btn">Онлайн-запись</button>
+          </a>
         </div>
       </section>
       <!-- Секция преимущества -->
@@ -117,30 +168,22 @@
           <ul class="plus-list list">
             <li class="plus-item">
               <p class="plus-list-number">600</p>
-              <!-- <svg class="plus-icon" width="13" height="22">
-                  <use href="./icon/symbol-defs.svg#icon-plus"></use>
-                </svg> -->
+          
               <p class="plus-list-text">Довольных клиентов в день</p>
             </li>
             <li class="plus-item">
               <p class="plus-list-number">50</p>
-              <!-- <svg class="plus-icon" width="13" height="22">
-                  <use href="./icon/symbol-defs.svg#icon-plus"></use>
-                </svg> -->
+           
               <p class="plus-list-text">Наград за отличный сервис</p>
             </li>
             <li class="plus-item">
               <p class="plus-list-number">20</p>
-              <!-- <svg class="plus-icon" width="13" height="22">
-                  <use href="./icon/symbol-defs.svg#icon-plus"></use>
-                </svg> -->
+          
               <p class="plus-list-text">Лучших мастеров Киева</p>
             </li>
             <li class="plus-item">
               <p class="plus-list-number">100</p>
-              <!-- <svg class="plus-icon" width="13" height="22">
-                  <use href="./icon/symbol-defs.svg#icon-plus"></use>
-                </svg> -->
+           
               <p class="plus-list-text">Подарков постоянным клиентам</p>
             </li>
           </ul>
@@ -157,8 +200,13 @@
           <p class="master-header decor-text-dark">для настоящих ценителей атмосферы</p>
           <h2 class="master-title">Наши мастера</h2>
           <ul class="master-list list">
-            <li>
-              <img class="master-img" src="./img/master-1.jpg" alt="Мастер 1" width="370" />
+            <li class="master__item">
+              <picture class="master-img">
+                <source srcset="./img/masters/img-1_lg.jpg 1x, ./img/masters/img-1_lg@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)" />
+                <source srcset="./img/masters/img-1_md.jpg 1x, ./img/masters/img-1_md@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" />
+                <source srcset="./img/masters/img-1_sm.jpg 1x, ./img/masters/img-1_sm@2x.jpg 2x" type="image/jpeg" />
+                <img src="./img/masters/img-1_sm.jpg" alt="Мастер 1" />
+             </picture>
               <h3 class="master-subtitle">John Smith</h3>
               <p lang="en" class="master-text">Extreme Barber</p>
               <ul class="master-inner-list list">
@@ -192,8 +240,13 @@
                 </li>
               </ul>
             </li>
-            <li>
-              <img class="master-img" src="./img/master-2.jpg" alt="Мастер 2" width="370" />
+            <li class="master__item">
+              <picture class="master-img">
+                <source srcset="./img/masters/img-2_lg.jpg 1x, ./img/masters/img-2_lg@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)" />
+                <source srcset="./img/masters/img-2_md.jpg 1x, ./img/masters/img-2_md@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" />
+                <source srcset="./img/masters/img-2_sm.jpg 1x, ./img/masters/img-2_sm@2x.jpg 2x" type="image/jpeg" />
+                <img src="./img/masters/img-2_sm.jpg" alt="Мастер 2" />
+             </picture>
               <h3 class="master-subtitle">Michele Doe</h3>
               <p lang="en" class="master-text">Extreme Barber</p>
               <ul class="master-inner-list list">
@@ -227,8 +280,13 @@
                 </li>
               </ul>
             </li>
-            <li>
-              <img class="master-img" src="./img/master-3.jpg" alt="Мастер 3" width="370" />
+            <li class="master__item">
+              <picture class="master-img">
+                <source srcset="./img/masters/img-3_lg.jpg 1x, ./img/masters/img-3_lg@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)" />
+                <source srcset="./img/masters/img-3_md.jpg 1x, ./img/masters/img-3_md@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" />
+                <source srcset="./img/masters/img-3_sm.jpg 1x, ./img/masters/img-3_sm@2x.jpg 2x" type="image/jpeg" />
+                <img src="./img/masters/img-3_sm.jpg" alt="Мастер 3" />
+             </picture>
               <h3 class="master-subtitle">Alan Black</h3>
               <p lang="en" class="master-text">Extreme Barber</p>
               <ul class="master-inner-list list">
@@ -268,15 +326,40 @@
       <!-- Секция Наши работы -->
       <section class="works section">
         <div class="container">
-          <!-- h2 скрытый -->
           <h2 hidden>Галерея работ</h2>
           <p class="works-header decor-text-dark">На латинском языке “барба” означает “борода”</p>
           <ul class="works-list list">
-            <li><img src="./img/Rectangle-25.jpg" alt="Стрижка" /></li>
-            <li><img src="./img/Rectangle-26.jpg" alt="Бритье" /></li>
-            <li><img src="./img/Rectangle-27.jpg" alt="Процедуры релакса" /></li>
-            <li>
-              <img src="./img/Rectangle-28.jpg" alt="Корректировка стрижки" />
+            <li class="works__item">
+              <picture>
+                <source srcset="./img/gallery/pic-1_lg.jpg 1x, ./img/gallery/pic-1_lg@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)" />
+                <source srcset="./img/gallery/pic-1_md.jpg 1x, ./img/gallery/pic-1_md@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" />
+                <source srcset="./img/gallery/pic-1_sm.jpg 1x, ./img/gallery/pic-1_sm@2x.jpg 2x" type="image/jpeg" />
+                <img src="./img/gallery/pic-1_sm.jpg" alt="Стрижка" />
+             </picture>
+            </li>
+            <li class="works__item">
+              <picture>
+                <source srcset="./img/gallery/pic-2_lg.jpg 1x, ./img/gallery/pic-2_lg@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)" />
+                <source srcset="./img/gallery/pic-2_md.jpg 1x, ./img/gallery/pic-2_md@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" />
+                <source srcset="./img/gallery/pic-2_sm.jpg 1x, ./img/gallery/pic-2_sm@2x.jpg 2x" type="image/jpeg" />
+                <img src="./img/gallery/pic-2_sm.jpg" alt="Бритье" />
+             </picture>
+            </li>
+            <li class="works__item">
+              <picture>
+                <source srcset="./img/gallery/pic-3_lg.jpg 1x, ./img/gallery/pic-3_lg@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)" />
+                <source srcset="./img/gallery/pic-3_md.jpg 1x, ./img/gallery/pic-3_md@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" />
+                <source srcset="./img/gallery/pic-3_sm.jpg 1x, ./img/gallery/pic-3_sm@2x.jpg 2x" type="image/jpeg" />
+                <img src="./img/gallery/pic-3_sm.jpg" alt="Процедуры релакса" />
+             </picture>
+            </li>
+            <li class="works__item">
+              <picture>
+                <source srcset="./img/gallery/pic-4_lg.jpg 1x, ./img/gallery/pic-4_lg@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)" />
+                <source srcset="./img/gallery/pic-4_md.jpg 1x, ./img/gallery/pic-4_md@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" />
+                <source srcset="./img/gallery/pic-4_sm.jpg 1x, ./img/gallery/pic-4_sm@2x.jpg 2x" type="image/jpeg" />
+                <img src="./img/gallery/pic-4_sm.jpg" alt="Корректировка стрижки" />
+             </picture>
             </li>
           </ul>
         </div>
@@ -285,12 +368,11 @@
       <section class="cont section">
         <div class="container cont-container">
           <div class="cont-wrapper1">
-            <!-- H2 скрытый -->
             <h2 hidden>Контактная информация</h2>
             <h3>Онлайн-запись</h3>
 
-            <form action="" class="contacts-form">
-              <div class="form-wrapper">
+            <form action="" class="contacts-form" id="form">
+              <div class="form-wrapper ">
                 <label class="contacts-form-label">
                   <input type="text" class="contacts-form-input" placeholder=" " required minlength="3" maxlength="12" />
                   <span class="form-input-label">Имя*</span>
@@ -308,7 +390,8 @@
             </form>
           </div>
           <div class="cont-wrapper2">
-            <h3>Контакты</h3>
+            <div class="cont-wrapper2__left">
+              <h3>Контакты</h3>
             <address class="adr">
               <ul class="list">
                 <li>
@@ -328,9 +411,12 @@
                 </li>
               </ul>
             </address>
-            <h4>время работы</h4>
-            <p class="const-text">Ежедневно с <time datetime="9:00">9:00</time> до <time datetime="22:00"> 22:00</time></p>
-          </div>
+            </div>
+            <div class="cont-wrapper2__right">
+              <h4>время работы</h4>
+              <p class="const-text">Ежедневно с <time datetime="9:00">9:00</time> до <time datetime="22:00"> 22:00</time></p>
+            </div>
+            </div>
         </div>
       </section>
     </main>
@@ -343,5 +429,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
