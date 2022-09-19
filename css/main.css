@@ -91,23 +91,23 @@ body {
   margin-right: auto;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../../img/Slider-img-3_sm.jpg);
+  background-image: url(../img/Slider-img-3_sm.jpg);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .own-wrapper {
-    background-image: url(../../img/Slider-img-3_sm@2x.jpg);
+    background-image: url(../img/Slider-img-3_sm@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .own-wrapper {
     max-width: 768px;
     background-size: cover;
-    background-image: url(../../img/Slider-img-3_md.jpg);
+    background-image: url(../img/Slider-img-3_md.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .own-wrapper {
-    background-image: url(../../img/Slider-img-3_md@2x.jpg);
+    background-image: url(../img/Slider-img-3_md@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -115,12 +115,12 @@ body {
     max-width: 1200px;
     background-size: cover;
     background-position: 155px;
-    background-image: url(../../img/Slider-img-3_lg.jpg);
+    background-image: url(../img/Slider-img-3_lg.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .own-wrapper {
-    background-image: url(../../img/Slider-img-3_lg@2x.jpg);
+    background-image: url(../img/Slider-img-3_lg@2x.jpg);
   }
 }
 
